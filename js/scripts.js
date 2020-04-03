@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
-  $("#formOne").submit()
+  $("#formOne").submit(function(e){
+    e.preventDefault();
+  });
 
 })
