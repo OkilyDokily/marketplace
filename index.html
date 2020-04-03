@@ -36,7 +36,7 @@
         </div>
         <div class="form-group">
           <label for="state">State:</label>
-          <select>
+          <select id="state">
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
@@ -94,6 +94,14 @@
           <label for="zip">5 digit zip code:</label>
           <input type="number" id="zip" class="form-control">
         </div>
+        <div class="form-group">
+          <label for="amount">Select how many items you wish to purchase.</label>
+          <select id="amount">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
         <button type="submit">Buy Now!</button>
       </form>
       <div class="showcase col-xs-9">
@@ -102,19 +110,23 @@
             <img src="img/fourply.webp" alt="">
             <div class="description">The best 4 ply toiletpaper on the market. It's sturdy, but it's also soft as silk.</div>
           </div>
-          <p class="price">$55.99 - limit one per household</p>
+          <p class="price">$55.99 - limit three per household</p>
       </div>
      
     </div>
     
   </div>
   <div class="modal">
-    <p>Thanks for your purchase, <span class="firstname"></span>!</p>
+    <div class="thanks">
+      <p>Thanks for your purchase, <span class="firstname"></span>!</p>
+    <p>Your total purchase value is $<span class="total"></span></p>
+    </div>
+    
     <div class="fulladdress">
       <p>Your item will be delivered to:</p>
       <p><span class="lastname"></span>, <span class="firstname"></span></p>
-      <p><span class="address"></span><span class="apt"></span></p>
-      <p><span class="city"></span>,<span class="state"></span><span class="zip"></span></p>
+      <p><span class="address"></span> <span class="apt"></span></p>
+      <p><span class="city"></span>, <span class="state"></span> <span class="zip"></span></p>
     </div>
     
   </div>

@@ -1,6 +1,7 @@
 .product {
   margin-top: 20px;
   margin-left: 30px;
+  text-align: center;
   
 }
 
@@ -28,4 +29,25 @@ div.modal {
   opacity: 95%;
 }
 
+div.modal p {
+  color: darkblue;
+}
 
+div.fulladdress{
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+div.thanks{
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+div.fulladdress p {
+  margin: 0;
+}
+
+
+div.fulladdress p:first-of-type{
+  margin-bottom: 20px;
+}
