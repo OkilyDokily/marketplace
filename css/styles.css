@@ -18,6 +18,10 @@ p.price {
  
 }
 
+span.red{
+  color:red;
+}
+
 div.modal {
   display:none;
   position: fixed;
@@ -26,7 +30,7 @@ div.modal {
   width: 600px;
   height: 600px;
   background-color: antiquewhite;
-  opacity: 95%;
+  opacity: 0%;
 }
 
 div.modal p {

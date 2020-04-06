@@ -1,11 +1,14 @@
 $(document).ready(function(){
 
+  //business logic
+  var total = amount => 59.99 * amount;
+
   $("#formOne").submit(function(e){
     e.preventDefault();
 
     var amount = parseInt($("#amount").val());
-    var total = 55.99 * amount;
-    $(".total").text(total);
+    
+    $(".total").text(total(amount));
     $(".firstname").text($("#firstname").val());
 
     $(".lastname").text($("#lastname").val());
@@ -15,7 +18,18 @@ $(document).ready(function(){
     $(".state").text($("#state").val());
     $(".zip").text($("#zip").val());
     $(".modal").show();
-
+    
+    $(".modal").animate({opacity:1},1000);
+    
+      
+     
+   
+    $("button").prop("disabled", true);
+    $('#formOne').each(function(){
+      this.reset();
+    });
   });
+
+ 
 
 })
