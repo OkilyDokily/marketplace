@@ -1,14 +1,14 @@
 $(document).ready(function(){
 
   //business logic
-  var total = amount => 59.99 * amount;
+  var totalCost = amount => 59.99 * amount;
 
   $("#formOne").submit(function(e){
     e.preventDefault();
 
-    var amount = parseInt($("#amount").val());
+    var amountOfToiletPaper = parseInt($("#amount").val());
     
-    $(".total").text(total(amount));
+    $(".total").text(totalCost(amountOfToiletPaper));
     $(".firstname").text($("#firstname").val());
 
     $(".lastname").text($("#lastname").val());
