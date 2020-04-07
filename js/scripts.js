@@ -17,8 +17,8 @@ $(document).ready(function(){
     });
     
     
-    $(".modal").show();
-    $(".modal").animate({opacity:1},1000);
+    $("#modal").show();
+    $("#modal").animate({opacity:1},1000);
     
 
     $("#formOne :input").prop("disabled", true);
@@ -28,8 +28,12 @@ $(document).ready(function(){
 
     $("body").click(function(e){
       
-      $("#formOne :input").prop("disabled", false);
-      $(".modal").hide();
+      if(e.target.id != "modal"){
+        $("#formOne :input").prop("disabled", false);
+        $("#modal").hide();
+        $("body").off();
+      }
+
     });
 
   });
