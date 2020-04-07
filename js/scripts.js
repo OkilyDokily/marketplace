@@ -20,10 +20,8 @@ $(document).ready(function(){
     $(".modal").show();
     $(".modal").animate({opacity:1},1000);
     
-    
 
-      
-    $("button").prop("disabled", true);
+    $("#formOne :input").prop("disabled", true);
     $('#formOne').each(function(){
       this.reset();
     });
