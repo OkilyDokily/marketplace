@@ -18,6 +18,7 @@ $(document).ready(function(){
     
     
     $("#modal").show();
+    $("#page-mask").show();
     $("#modal").animate({opacity:1},1000);
     
 
@@ -27,12 +28,13 @@ $(document).ready(function(){
     });
 
     $("body").click(function(e){
-      
+      console.log(e.target.modal)
       if(e.target.id != "modal"){
         $("#formOne :input").prop("disabled", false);
+        $("#page-mask").hide();
         $("#modal").hide();
         $("body").off();
-      }
+      }   
 
     });
 
