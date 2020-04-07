@@ -25,6 +25,13 @@ $(document).ready(function(){
     $('#formOne').each(function(){
       this.reset();
     });
+
+    $("body").click(function(e){
+      
+      $("#formOne :input").prop("disabled", false);
+      $(".modal").hide();
+    });
+
   });
 
   
