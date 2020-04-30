@@ -28,7 +28,7 @@ $(document).ready(function(){
     });
 
     $("body").click(function(e){
-      console.log(e.target.modal)
+      console.log(e.target.id);
       if(e.target.id != "modal"){
         $("#formOne :input").prop("disabled", false);
         $("#page-mask").hide();
@@ -39,9 +39,5 @@ $(document).ready(function(){
     });
 
   });
-
-  
-
- 
 
 })

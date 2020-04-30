@@ -2,12 +2,10 @@
   margin-bottom: 20px;
 }
 
-
 .product {
   margin-top: 20px;
   margin-left: 30px;
   text-align: center;
-  
 }
 
 img {
@@ -20,7 +18,6 @@ div.description {
 
 p.price {
   font-weight: bolder;
- 
 }
 
 span.red{
@@ -55,7 +52,6 @@ div.thanks{
 div.fulladdress p {
   margin: 0;
 }
-
 
 div.fulladdress p:first-of-type{
   margin-bottom: 20px;
